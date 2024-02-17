@@ -13,19 +13,24 @@ Before proceeding, ensure you have the following prerequisites installed:
 - [Docker hub account](https://hub.docker.com/)
 - [Python](https://docs.python.org/3/using/index.html)
 - [Pip](https://pip.pypa.io/en/stable/installation/)
+- [Terraform](https://developer.hashicorp.com/terraform/install) (version 0.15.0)
 
 ## Installing dependencies
 
 To install the dependencies, please use: `pip3 install -r requirements.txt`
 
-## How to run
-
-To run the project:
-
-1. ???
+## How to provision resources
 
 ```sh
-$ ??
+$ terraform init
+$ terraform plan
+$ terraform apply --auto-approve
+```
+
+## How to destroy provisioned resources
+
+```sh
+$ terraform destroy --auto-approve
 ```
 
 ## URL to public GitHub repo
