@@ -47,11 +47,11 @@ $ kubectl get nodes
 Apply the kubernetes deployment and services to your cluster.
 
 ```sh
-$ kubectl apply -f nginx-deployment.yaml
-$ kubectl apply -f nginx-service.yaml
+$ kubectl apply -f deployment.yaml
+$ kubectl apply -f service.yaml
 ```
 
-Get your load balancer external ip with `kubectl get svc nginx-service -o wide`.
+Get your load balancer external ip with `kubectl get svc my-app-service -o wide`.
 See `Success! Welcome To My App!` on the screen.
 
 ## How to destroy provisioned resources
